@@ -1,0 +1,41 @@
+.container {
+    text-align: center; /*centre le contenu horizontalement */
+    margin-top: 150px; /* Ajoute une marge en haut de 50 px */
+    
+  }
+  
+  /* style pour le titre */
+  .title {
+    font-family: fantasy;
+    font-size: 5em; /* definit une taille de police */
+    margin-bottom: 20px; /* ajoute une marge en bas de 20 px */
+  }
+  
+  /* style pour le compteur */
+  .counter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em; /* definit une taille de police */
+    margin-bottom: 20px; /* ajoute une marge en bas */
+  }
+  
+  /* style pour les boutons */
+  .button {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px; /* ajoute une marge autour des boutons */
+    padding: 10px 20px; /* ajoute un padding - 10 px en haut en bas 20 px à gauche et a droite */
+    font-size: 1em; /* definit une taille de police */
+    cursor: pointer; /* charge le curseur en pointeur lors du survol */
+    background-color: black; /* definit une couleur de fond */
+    color: white; /* definit la couleur du texte */
+    border: none; /* supprime les bordures */
+    border-radius: 15px; /* ajoute des coins arrondis */
+  }
+  
+
+  /* style pour les boutons lors du survol */
+  .button:hover {
+    background-color: pink; /* change la couleurs lors du survol */
+    color: black /* change la couleur du texte, doit absolument etre placé en dessous de background color */
+  }
+  
