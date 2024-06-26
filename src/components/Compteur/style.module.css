@@ -38,4 +38,37 @@
     background-color: pink; /* change la couleurs lors du survol */
     color: black /* change la couleur du texte, doit absolument etre placé en dessous de background color */
   }
+
+  /* Style pour l'arc-en-ciel */
+.rainbowBackground {
+  position: absolute;
+  width: 100%; /* Remplit toute la largeur du conteneur */
+  height: 300px; /* Hauteur arbitraire pour l'arc-en-ciel */
+  /* bottom: 100px; Déplace l'arc-en-ciel vers le bas */
+  background: linear-gradient(to right, 
+    rgb(249, 193, 249) 0%, 
+    rgb(214, 171, 245) 14%, 
+    rgb(118, 118, 238) 28%, 
+    rgb(153, 248, 153) 42%, 
+    rgb(230, 230, 125) 56%, 
+    rgb(237, 197, 124) 70%, 
+    rgb(243, 147, 147) 84%
+  ); /* Dégradé linéaire représentant les couleurs de l'arc-en-ciel */
+  border-radius: 70%; /* Donne une forme d'arc-en-ciel */
+  z-index: -1; /* Place derrière le contenu principal */
+  animation: slideIn 2s forwards; /* Animation pour faire apparaître l'arc-en-ciel */
+}
+
+/* Animation pour faire apparaître l'arc-en-ciel */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
   
